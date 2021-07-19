@@ -53,6 +53,18 @@ I chose to go with 25 clusters, even though the _Elbow Point_ method suggested o
 
 ![clustered neighborhoods](_images/clustered_neighborhoods.png)
 
+# Discussion & Conclusion
+
+The purple locations (__Cluster 1__) have the top 5 most common venues as restaurents and cafes. These are location for hanging out and eating. These may have good potential for gyms.
+
+The light orange locations (__Cluster 18__) have the 1st most common venue as Gyms. These locations signify _high_ competition and should therefore be avoided. These locations are centered in Brockton.
+
+The dark orange locations (__Cluster 19__) have everyday venues as most common, such as restaurants, pharmacies, convenience stores, and grocery stores. These are _prime_ locations for gyms as they (1) high growth, (2) lacking in competition and therefore (3) have an untapped fitness market. This cluster centers around __Lowell__, north west of Boston.
+
+The red locations (__Cluster 24__) also have everyday venues, similar to Cluster 19, but the difference is that there are more hang-out venues as the most common, such as Bars.
+
+__All in all, the most promising location for a gym in Massachusetts seems to be that of Lowell. It is a neighborhood that is experiencing high growth the past 5 years in comparison to the rest of Massachusetts. It also has potentially limited competition at this point.__
+
 # References
 > <sup>1</sup> Stout, M. (April 26, 2021) _'Good news for Massachusetts': Populations tops 7 million as state keeps 9 congressional seats after 2020 Census_ from: https://www.bostonglobe.com/2021/04/26/metro/massachusetts-will-keep-9-congressional-seats-after-2020-census/
 >
