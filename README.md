@@ -15,10 +15,37 @@ Another important factor to consider when opening a business is competition. The
 ## Data
 - Massachusetts housing price data using the [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/)
 - Venue data using the [Foursquare API](https://developer.foursquare.com)
-- Geospatial data from [United-States-Zip-Codes.org](https://www.unitedstateszipcodes.org/zip-code-database/)
+- Geospatial data from [United-States-Zip-Codes.org](https://www.unitedstateszipcodes.org/zip-code-database/):
+
+![all neighborhoods](mass_neighborhoods.png)
 
 ## Methodology & Results
-TBC
+The methodology involved two major steps: identify top growth neighborhoods in Massachusetts in terms of housing price growth over the past 5 years and then cluster those top growth neighborhoods based on venue data acquired from the Foursquare API. The technical steps for all this can be found in the accompanying notebook, but below is a summary.
+
+### Identify High Growth Neighborhoods
+In order to identify high growth neighborhoods, I utilized housing prices as a proxy for growth. I downloaded the Zillow housing price dataset which involved monthly average housing prices from 1996 to 2021. 
+
+![housing prices](_images/housing_prices_original.png)
+
+I wrangled the above dataset and derived the average yearly housing prices per neighborhood from 2015-2021 and then calculated the percentage growth over a 5 year period.
+
+![housing prices adjusted](_images/housing_prices_adjusted.png)
+
+I calculated the 90th percentile of growth rates for all neighborhoods in Massachusetts and demarcated the growth rates on this bar plot:
+
+![bar plot growth rate](home_value_growth_barplot.png)
+
+After this filtering down for high growth neighborhoods, these are the potential locations for a new gym:
+
+![potential locations](potential_locations.png)
+
+### Identify Potential Competition
+I pulled venue data using the Foursquare API and mapped out all Gyms and Fitness Centers in the aforementioned potential locations in order to identify competitors:
+
+![potential_competitors](potential_competitors.png)
+
+### Cluster Nieghborhoods
+After all of the above,
 
 # References
 > <sup>1</sup> Stout, M. (April 26, 2021) _'Good news for Massachusetts': Populations tops 7 million as state keeps 9 congressional seats after 2020 Census_ from: https://www.bostonglobe.com/2021/04/26/metro/massachusetts-will-keep-9-congressional-seats-after-2020-census/
