@@ -17,7 +17,7 @@ Another important factor to consider when opening a business is competition. The
 - Venue data using the [Foursquare API](https://developer.foursquare.com)
 - Geospatial data from [United-States-Zip-Codes.org](https://www.unitedstateszipcodes.org/zip-code-database/):
 
-![all neighborhoods](mass_neighborhoods.png)
+![all neighborhoods](_images/mass_neighborhoods.png)
 
 ## Methodology & Results
 The methodology involved two major steps: identify top growth neighborhoods in Massachusetts in terms of housing price growth over the past 5 years and then cluster those top growth neighborhoods based on venue data acquired from the Foursquare API. The technical steps for all this can be found in the accompanying notebook, but below is a summary.
@@ -33,19 +33,25 @@ I wrangled the above dataset and derived the average yearly housing prices per n
 
 I calculated the 90th percentile of growth rates for all neighborhoods in Massachusetts and demarcated the growth rates on this bar plot:
 
-![bar plot growth rate](home_value_growth_barplot.png)
+![bar plot growth rate](_images/home_value_growth_barplot.png)
 
 After this filtering down for high growth neighborhoods, these are the potential locations for a new gym:
 
-![potential locations](potential_locations.png)
+![potential locations](_images/potential_locations.png)
 
 ### Identify Potential Competition
 I pulled venue data using the Foursquare API and mapped out all Gyms and Fitness Centers in the aforementioned potential locations in order to identify competitors:
 
-![potential_competitors](potential_competitors.png)
+![potential_competitors](_images/potential_competitors.png)
 
 ### Cluster Nieghborhoods
-After all of the above,
+In order to properly cluster each potential location, I created a dataset of the top 5 most common venues per neighborhood of the previously identified _top neighborhoods_.
+
+![most common venues](_images/most_common_venues.png)
+
+I chose to go with 25 clusters, even though the _Elbow Point_ method suggested only 2 clusters. This is because we are looking at a vast location with a variety of venues per location. These are the top growth neighborhoods clustered by most common venues:
+
+![clustered neighborhoods](_images/clustered_neighborhoods.png)
 
 # References
 > <sup>1</sup> Stout, M. (April 26, 2021) _'Good news for Massachusetts': Populations tops 7 million as state keeps 9 congressional seats after 2020 Census_ from: https://www.bostonglobe.com/2021/04/26/metro/massachusetts-will-keep-9-congressional-seats-after-2020-census/
