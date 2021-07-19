@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
+/Clustering_Neighborhoods_in_Toronto.ipynb

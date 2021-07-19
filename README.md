@@ -15,7 +15,7 @@ Another important factor to consider when opening a business is competition. The
 ## Data
 - Massachusetts housing price data using the [Zillow Home Value Index (ZHVI)](https://www.zillow.com/research/data/)
 - Venue data using the [Foursquare API](https://developer.foursquare.com)
-- Geospatial data from (United-States-Zip-Codes.org)[https://www.unitedstateszipcodes.org/zip-code-database/]
+- Geospatial data from [United-States-Zip-Codes.org](https://www.unitedstateszipcodes.org/zip-code-database/)
 
 ## Methodology & Results
 TBC
